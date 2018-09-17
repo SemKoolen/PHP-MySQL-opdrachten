@@ -4,12 +4,14 @@
 </head>
     <body>
         <?php
-            $time = date("H");
+//            $time = date("H");
+            $time = 0;
+            $time++;
             $timeStatement;
             switch($time) {
-                case $time >=18: $timeStatement = "Avond";   break;
-                case $time >=12: $timeStatement = "Middag";  break;
-                case $time >=6 : $timeStatement = "Ochtend"; break;
+                case $time >=19: $timeStatement = "Avond";   break;
+                case $time >=13: $timeStatement = "Middag";  break;
+                case $time >=7 : $timeStatement = "Ochtend"; break;
                 default        : $timeStatement = "Nacht";
             }
             echo "Het is $timeStatement";
