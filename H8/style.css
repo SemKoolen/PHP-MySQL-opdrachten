@@ -1,0 +1,12 @@
+.medicijnlijst {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.medicijnlijst td{
+    border: 1px solid black;
+    max-width: 300px;
+    min-width: 20px;
+    text-align: center;
+    padding: 4px;
+}

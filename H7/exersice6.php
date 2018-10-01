@@ -10,10 +10,12 @@
             $number = $_GET["number"];
             if ($number == null) {$_SESSION["numbers"] = array(); }
             if(isset($_GET["submit"])) {
-                array_push($_SESSION["numbers"], $number);
-                $total = count($_SESSION["numbers"]);
-                for ($x = 0; $x < $total; $x++){
-
+                if($number >= 1 && $number <= 10) {
+                    array_push($_SESSION["numbers"], $number);
+                    $count = count($_SESSION["numbers"]);
+                    $average = array_sum($_SESSION["numbers"]) / $count;
+                } else {
+                    echo "<br>cijfer kan alleen een waarde hebben van 1.0 tot en met 10.0";
                 }
             }
         ?>
@@ -32,7 +34,8 @@
 
         <?php
         if(isset($_SESSION["numbers"])) {
-            echo "Aantal ingevoerde cijfers: $total";
+            echo "Aantal ingevoerde cijfers: $count <br>";
+            echo "Gemmiddelde: $average";
         }
         ?>
 

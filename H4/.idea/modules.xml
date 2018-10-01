@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/H4.iml" filepath="$PROJECT_DIR$/.idea/H4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../Health One/Health One Application/.idea/Health One Application.iml" filepath="$PROJECT_DIR$/../../../Health One/Health One Application/.idea/Health One Application.iml" />
       <module fileurl="file://$PROJECT_DIR$/../.idea/PHP-MySQL-opdrachten.iml" filepath="$PROJECT_DIR$/../.idea/PHP-MySQL-opdrachten.iml" />
     </modules>
   </component>
